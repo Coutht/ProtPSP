@@ -27,7 +27,7 @@ before predict you must ensure you have feature extract from ProtT5 as embedding
 
 If you want to predict general site, taking S/T site as a example, run:
 
-"python predict.py"
+> python predict.py
 
 
 Output file includes three columns, position, residue type and score. The value range of score is [0, 1], with values closer to 1 indicating the site is more likely to be phosphorylated.
@@ -42,7 +42,7 @@ before predict you must ensure you have feature extract from ProtT5 as embedding
 
 if you want to train for ST site, you can cd train_1.py, then set you owner train_file_name in train_1.py,then run 
 
-"python train_1.py"
+> python train_1.py
 
 
 # Contact
