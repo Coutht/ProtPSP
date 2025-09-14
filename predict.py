@@ -20,7 +20,7 @@ from methods import fusion_module
 
 def predict(model_weight_path, test_file_name, savepath, residue, win, embedding_dict, custom_objects=None,
                      ):
-    print("Testing..........")
+    print("Predicting..........")
     model = load_model(model_weight_path, custom_objects=custom_objects)
     test = pd.read_csv(test_file_name, header=None)
 
@@ -97,7 +97,7 @@ if __name__ == '__main__':
 
     model_weight_path = './model/' + residue + '/train_' + residue + ('1_weight_best_2.h5')
 
-    test_file_name = "./Dataset/Uni_PELM_PSP_dbPTM_CDHIT/test_" + residue + "1.csv"
+    test_file_name = "./data/test_" + residue + "1.csv"
     savepath = "./result/"
 
 
@@ -108,3 +108,4 @@ if __name__ == '__main__':
 
     # model_test_batch(model_weight_path, test_file_name, residue, win, embedding_dict, custom_object, batch_size, mode=mode)
     predict(model_weight_path, test_file_name, savepath,residue, win, embedding_dict, custom_object)
+
