@@ -25,18 +25,21 @@ before predict you must ensure you have feature extract from ProtT5 as embedding
 
 If you want to predict general site, taking S/T site as a example, run:
 
-'python predict.py'
+'''python predict.py'''
 
 Output file includes three columns, position, residue type and score. The value range of score is [0, 1], with values closer to 1 indicating the site is more likely to be phosphorylated.
 
 # Train For Your own Data
 you should process you data as csv file like 
+
 <img width="703" height="377" alt="image" src="https://github.com/user-attachments/assets/acca4469-bd0e-43bd-919a-fe16fe30b52c" />
+
 from left to right is label, uniprot_id, length, residue-position, sequence respectively.
 before predict you must ensure you have feature extract from ProtT5 as embedding file.
 
 if you want to train for ST site, you can cd train_1.py, then set you owner train_file_name in train_1.py,then run 
-'python train_1.py'
+
+'''python train_1.py'''
 
 
 # Contact
