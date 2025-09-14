@@ -1,6 +1,6 @@
 # ProtPSP
 
-ProtPSP provides the prediction of general and kinase-specific phosphorylation site using deep leraning. Developer is Lei Guo from Laboratory of Biomedical Network, Department of Electronic Science, Fuzhou University of China.
+ProtPSP provides the prediction of general and kinase-specific phosphorylation site using deep leraning. Developer is Guan bifeng from College of Computer and Data Science, Fuzhou University of China.
 
 # Requirement
 python == 3.5, 3.6 or 3.7
@@ -12,6 +12,7 @@ tensorflow == 1.14.0
 numpy >= 1.8.0
 
 backend == tensorflow
+
 # data and model wieght download 
 you can download our data and model weight at 通过网盘分享的文件：protpsp
 链接: https://pan.baidu.com/s/1Jtf0RnZnj30TDVBo0Bg8ag?pwd=1111 提取码: 1111
@@ -24,7 +25,7 @@ before predict you must ensure you have feature extract from ProtT5 as embedding
 
 If you want to predict general site, taking S/T site as a example, run:
 
-、python predict.py、
+'python predict.py'
 
 Output file includes three columns, position, residue type and score. The value range of score is [0, 1], with values closer to 1 indicating the site is more likely to be phosphorylated.
 
@@ -35,7 +36,7 @@ from left to right is label, uniprot_id, length, residue-position, sequence resp
 before predict you must ensure you have feature extract from ProtT5 as embedding file.
 
 if you want to train for ST site, you can cd train_1.py, then set you owner train_file_name in train_1.py,then run 
-、python train_1.py、
+'python train_1.py'
 
 
 # Contact
